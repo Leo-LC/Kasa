@@ -1,0 +1,22 @@
+@use "../../assets/styles/variables.scss" as *;
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: min(100%, 1240px);
+	margin-inline: auto;
+	padding: 3rem 1rem 0;
+}
+
+a {
+	color: $color-primary;
+	&:is(:hover, :focus) {
+		text-decoration: underline;
+	}
+}
+
+ul {
+	display: flex;
+	gap: 3.5rem;
+}

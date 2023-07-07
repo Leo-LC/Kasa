@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+.container {
+  background-color: hsl(0, 0%, 97%);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.75rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  padding: 3.5rem 3rem;
+}/*# sourceMappingURL=cards.module.css.map */
