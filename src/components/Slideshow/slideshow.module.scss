@@ -1,0 +1,47 @@
+@use "../../assets/styles/variables.scss" as *;
+
+.slideshow {
+	display: flex;
+	overflow: hidden;
+	height: 26rem;
+	border-radius: 1.5rem;
+}
+
+.slideshowImageWrapper {
+	flex-shrink: 0;
+	flex-basis: 100%;
+}
+
+.slideshowImage {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.slideshowWrapper {
+	position: relative;
+}
+
+.arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-inline: 1rem;
+}
+
+.arrowLeft {
+	left: 0;
+}
+
+.arrowRight {
+	right: 0;
+}
+
+.slideshowIndex {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-bottom: 1.5rem;
+	color: $color-neutral-100;
+}

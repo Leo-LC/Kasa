@@ -1,5 +1,9 @@
 # Questions : 
 
-    Où / comment placer un wrapper global (pour gérer padding / max-width) plutôt que de l'avoir sur chaque page
+   Chargement des images du Slideshow() lentes
 
-    Est-ce la bonne méthode pour récupérer la route vers la page du bien immo sur Card et Cards  ? 
+    
+
+## TODO : 
+	Animation texte sur collapse
+    Animations sur le slideShow()

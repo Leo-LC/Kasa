@@ -17,6 +17,9 @@ li {
 	list-style: none;
 }
 
+#root {
+	overflow: hidden;
+}
 .wrapper {
 	display: grid;
 	gap: 3rem;

@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+.errorWrapper {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  gap: 8.5rem;
+  margin-block: 8.5rem;
+  color: hsl(0, 100%, 69%);
+}
+.errorWrapper h1 {
+  margin: 0;
+  font-size: 18rem;
+  font-weight: 700;
+}
+.errorWrapper p {
+  font-size: 2.25rem;
+  font-weight: 500;
+}
+.errorWrapper a {
+  font-size: 1.125rem;
+  color: hsl(0, 100%, 69%);
+}
+.errorWrapper a:is(:hover, :focus) {
+  text-decoration: underline;
+}/*# sourceMappingURL=404.module.css.map */

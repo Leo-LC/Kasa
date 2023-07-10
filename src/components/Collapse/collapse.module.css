@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+.collapseTitle {
+  background-color: hsl(0, 100%, 69%);
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 1rem;
+  border-radius: 0.6125rem;
+}
+
+.collapseButton {
+  border: none;
+  background: none;
+  display: grid;
+  place-content: center;
+}
+
+.collapseDescription ul,
+.collapseDescription p {
+  border-radius: 0.6125rem;
+  background-color: hsl(0, 0%, 97%);
+  color: hsl(0, 100%, 69%);
+  font-size: 1.125rem;
+  font-weight: 400;
+  padding: 5rem 1.75rem 1.25rem 1.25rem;
+  margin: 0;
+  margin-top: -3rem;
+  position: relative;
+  z-index: -10;
+}
+
+.collapseDescription ul {
+  display: flex;
+  flex-direction: column;
+  line-height: 2rem;
+}
+
+.collapseDescription p {
+  line-height: 1.5rem;
+}
+
+.collapseDescription {
+  min-height: 0px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+  transition: grid-template-rows 0.5s ease-in-out;
+}
+
+.wrapper.open {
+  grid-template-rows: 1fr;
+}/*# sourceMappingURL=collapse.module.css.map */

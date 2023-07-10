@@ -1,6 +1,6 @@
 @use "../../assets/styles/variables.scss" as *;
 
-header {
+.header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -9,14 +9,14 @@ header {
 	padding: 3rem 1rem 0;
 }
 
-a {
+.header a {
 	color: $color-primary;
 	&:is(:hover, :focus) {
 		text-decoration: underline;
 	}
 }
 
-ul {
+.header ul {
 	display: flex;
 	gap: 3.5rem;
 }

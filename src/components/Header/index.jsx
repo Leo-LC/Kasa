@@ -1,11 +1,11 @@
-import "./header.css";
 import { Link } from "react-router-dom";
 import logoDesktop from "../../assets/images/logo-desktop.svg";
 import logoMobile from "../../assets/images/logo-mobile.svg";
+import styles from "./header.module.scss";
 
 function Header() {
 	return (
-		<header>
+		<header className={styles.header}>
 			<picture>
 				<source media="(max-width: 768px)" srcSet={logoMobile} />
 				<img src={logoDesktop} alt="logo" />

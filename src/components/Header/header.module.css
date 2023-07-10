@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
-header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,14 +8,14 @@ header {
   padding: 3rem 1rem 0;
 }
 
-a {
+.header a {
   color: hsl(0, 100%, 69%);
 }
-a:is(:hover, :focus) {
+.header a:is(:hover, :focus) {
   text-decoration: underline;
 }
 
-ul {
+.header ul {
   display: flex;
   gap: 3.5rem;
-}/*# sourceMappingURL=header.css.map */
+}/*# sourceMappingURL=header.module.css.map */

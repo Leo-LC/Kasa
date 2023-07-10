@@ -1,4 +1,4 @@
-import "./footer.scss";
+import styles from "./footer.module.scss";
 import logoFooter from "../../assets/images/logo-footer.svg";
 
 function Footer() {
@@ -6,7 +6,7 @@ function Footer() {
 		<footer>
 			<img src={logoFooter} alt="logo" />
 			<div>
-				<p>© 202 - Kasa. All rights reserved </p>
+				<p className={styles.text}>© 202 - Kasa. All rights reserved </p>
 			</div>
 		</footer>
 	);
