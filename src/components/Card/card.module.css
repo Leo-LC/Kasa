@@ -8,10 +8,13 @@
 }
 
 .title {
+  display: flex;
+  flex-wrap: wrap;
   position: absolute;
   bottom: 0;
   left: 0;
-  margin-block: 0;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
   color: hsl(0, 0%, 100%);
   font-size: 1.125rem;
   font-weight: 500;

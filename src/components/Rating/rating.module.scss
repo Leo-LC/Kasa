@@ -1,0 +1,12 @@
+@use "../../assets/styles/variables.scss" as *;
+
+.rating {
+	justify-self: end;
+	display: flex;
+	align-items: center;
+
+	& svg {
+		height: 2rem;
+		color: $color-primary;
+	}
+}

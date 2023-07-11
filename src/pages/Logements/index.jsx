@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import logements from "../../data/logements.json";
 import Slideshow from "../../components/Slideshow/slideshow";
 import DetailsGrid from "../../components/DetailsGrid";
@@ -10,9 +10,9 @@ function Logements() {
 	// On cherche le logement qui a l'id correspondant
 	const logement = logements.find((logement) => logement.id === id);
 
-	// Si le logement n'existe pas, on affiche un message d'erreur
+	// Si le logement n'existe pas, on redirige vers la page 404
 	if (!logement) {
-		return <div>Logement non trouvé</div>;
+		return <Navigate to="/404" />;
 	}
 
 	// On affiche les données du logement lié à l'id dans l'URL

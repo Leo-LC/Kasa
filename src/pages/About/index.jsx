@@ -12,7 +12,7 @@ function About() {
 					<Collapse
 						key={item.id}
 						title={item.title}
-						description={item.description}
+						description=<p>{item.description}</p>
 					/>
 				);
 			})}

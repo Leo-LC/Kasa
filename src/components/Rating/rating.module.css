@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+.rating {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+}
+.rating svg {
+  height: 2rem;
+  color: hsl(0, 100%, 69%);
+}/*# sourceMappingURL=rating.module.css.map */

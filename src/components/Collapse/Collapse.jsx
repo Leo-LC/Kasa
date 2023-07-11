@@ -24,9 +24,7 @@ export default function Collapse({ title, description }) {
 				</div>
 
 				<div className={`${styles.wrapper}  ${isOpen ? styles.open : ""}`}>
-					<div className={styles.collapseDescription}>
-						<p>{description}</p>
-					</div>
+					<div className={styles.collapseDescription}>{description}</div>
 				</div>
 			</div>
 		</>

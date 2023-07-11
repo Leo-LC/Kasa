@@ -6,4 +6,5 @@
 
 ## TODO : 
 	Animation texte sur collapse
-    Animations sur le slideShow()
+   Animations sur le slideShow()
+   Responsive

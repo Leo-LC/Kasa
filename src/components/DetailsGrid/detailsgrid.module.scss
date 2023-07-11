@@ -1,6 +1,65 @@
+@use "../../assets/styles/variables.scss" as *;
+
 .detailsGridWrapper {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(3, 1fr);
+	display: flex;
+	flex-wrap: wrap;
 	gap: 1rem;
+	justify-content: space-between;
+
+	& > * {
+		flex-basis: calc(50% - 10px);
+	}
+
+	& > :nth-child(even) {
+		justify-content: flex-end;
+	}
+	& .logementTitle {
+		color: $color-primary;
+
+		& h2 {
+			font-size: 2.25rem;
+			font-weight: 500;
+			margin-block: 0;
+		}
+
+		& p {
+			font-size: 1.125rem;
+			font-weight: 500;
+		}
+	}
+
+	& .host {
+		display: flex;
+		gap: 0.63rem;
+		align-items: center;
+		justify-content: flex-end;
+
+		& img {
+			width: 4rem;
+			aspect-ratio: 1;
+			border-radius: 50%;
+			object-fit: cover;
+		}
+
+		& p {
+			text-align: end;
+			color: $color-primary;
+			font-size: 1.125rem;
+			display: flex;
+			gap: 1rem;
+		}
+	}
+
+	& > ul {
+		padding-inline: 0;
+		display: flex;
+		gap: 1rem;
+		color: $color-neutral-100;
+
+		& li {
+			background-color: $color-primary;
+			border-radius: 0.625rem;
+			padding: 0.5rem 2rem;
+		}
+	}
 }
