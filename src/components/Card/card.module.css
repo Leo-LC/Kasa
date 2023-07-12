@@ -19,6 +19,12 @@
   font-size: 1.125rem;
   font-weight: 500;
 }
+@media screen and (width < 480px) {
+  .title {
+    margin-bottom: 1rem;
+    margin-left: 1.25rem;
+  }
+}
 
 .image {
   width: 100%;

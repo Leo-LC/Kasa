@@ -5,6 +5,10 @@
 	overflow: hidden;
 	height: 26rem;
 	border-radius: 1.5rem;
+
+	@media screen and (width < $bp-mobile) {
+		height: 16rem;
+	}
 }
 
 .slideshowImageWrapper {
@@ -27,6 +31,10 @@
 	top: 50%;
 	transform: translateY(-50%);
 	margin-inline: 1rem;
+
+	@media screen and (width < $bp-mobile) {
+		height: 1.5rem;
+	}
 }
 
 .arrowLeft {
@@ -44,4 +52,8 @@
 	transform: translateX(-50%);
 	margin-bottom: 1.5rem;
 	color: $color-neutral-100;
+
+	@media screen and (width < $bp-mobile) {
+		display: none;
+	}
 }

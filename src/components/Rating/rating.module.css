@@ -7,4 +7,9 @@
 .rating svg {
   height: 2rem;
   color: hsl(0, 100%, 69%);
+}
+@media screen and (width < 480px) {
+  .rating svg {
+    height: 1.125rem;
+  }
 }/*# sourceMappingURL=rating.module.css.map */

@@ -19,6 +19,11 @@
 	color: $color-neutral-100;
 	font-size: 1.125rem;
 	font-weight: 500;
+
+	@media screen and (width < $bp-mobile) {
+		margin-bottom: 1rem;
+		margin-left: 1.25rem;
+	}
 }
 
 .image {

@@ -2,15 +2,24 @@
 .collapseTitle {
   background-color: hsl(0, 100%, 69%);
   color: hsl(0, 0%, 100%);
-  font-size: 1.5rem;
-  font-weight: 500;
   display: flex;
   justify-content: space-between;
-  padding-inline: 1rem;
+  align-items: center;
+  padding: 0.5rem 1rem;
   border-radius: 0.6125rem;
 }
 @media screen and (width < 480px) {
   .collapseTitle {
+    padding: 0 0.5rem;
+  }
+}
+.collapseTitle h3 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin: 0;
+}
+@media screen and (width < 480px) {
+  .collapseTitle h3 {
     font-size: 0.8125rem;
   }
 }
@@ -45,7 +54,7 @@
 .collapseDescription ul {
   display: flex;
   flex-direction: column;
-  line-height: 2rem;
+  line-height: 1.75rem;
 }
 
 .collapseDescription p {

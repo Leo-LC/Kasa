@@ -27,4 +27,9 @@ li {
   max-width: 1240px;
   margin: 0 auto;
   padding: 0 1rem;
+}
+@media screen and (width < 480px) {
+  .wrapper {
+    gap: 1rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

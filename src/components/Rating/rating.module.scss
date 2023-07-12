@@ -8,5 +8,9 @@
 	& svg {
 		height: 2rem;
 		color: $color-primary;
+
+		@media screen and (width < $bp-mobile) {
+			height: 1.125rem;
+		}
 	}
 }

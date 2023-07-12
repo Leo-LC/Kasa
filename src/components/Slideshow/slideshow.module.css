@@ -5,6 +5,11 @@
   height: 26rem;
   border-radius: 1.5rem;
 }
+@media screen and (width < 480px) {
+  .slideshow {
+    height: 16rem;
+  }
+}
 
 .slideshowImageWrapper {
   flex-shrink: 0;
@@ -28,6 +33,11 @@
   transform: translateY(-50%);
   margin-inline: 1rem;
 }
+@media screen and (width < 480px) {
+  .arrow {
+    height: 1.5rem;
+  }
+}
 
 .arrowLeft {
   left: 0;
@@ -44,4 +54,9 @@
   transform: translateX(-50%);
   margin-bottom: 1.5rem;
   color: hsl(0, 0%, 100%);
+}
+@media screen and (width < 480px) {
+  .slideshowIndex {
+    display: none;
+  }
 }/*# sourceMappingURL=slideshow.module.css.map */

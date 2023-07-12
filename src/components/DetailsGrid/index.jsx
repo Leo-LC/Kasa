@@ -23,20 +23,20 @@ export default function DetailsGrid({
 				<p>{location}</p>
 			</div>
 
-			<div className={styles.host}>
-				<p>
-					{hostFirstName} <br /> {hostLastName}{" "}
-				</p>
-				<img src={host.picture} alt="host"></img>
-			</div>
-
-			<ul>
+			<ul className={styles.tags}>
 				{tags.map((tag) => (
 					<li key={`${id} -  ${tag}`}>{tag}</li>
 				))}
 			</ul>
-
-			<Rating rating={rating} />
+			<div className={styles.hostRating}>
+				<Rating rating={rating} />
+				<div className={styles.host}>
+					<p>
+						{hostFirstName} <br /> {hostLastName}{" "}
+					</p>
+					<img src={host.picture} alt="host"></img>
+				</div>
+			</div>
 
 			<Collapse title="Description" description=<p>{description}</p> />
 

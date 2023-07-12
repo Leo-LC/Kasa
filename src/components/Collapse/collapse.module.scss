@@ -3,16 +3,25 @@
 .collapseTitle {
 	background-color: $color-primary;
 	color: $color-neutral-100;
-	font-size: 1.5rem;
-	font-weight: 500;
 
 	display: flex;
 	justify-content: space-between;
-	padding-inline: 1rem;
+	align-items: center;
+	padding: 0.5rem 1rem;
 	border-radius: 0.6125rem;
 
 	@media screen and (width < $bp-mobile) {
-		font-size: 0.8125rem;
+		padding: 0 0.5rem;
+	}
+
+	& h3 {
+		font-size: 1.125rem;
+		font-weight: 500;
+		margin: 0;
+
+		@media screen and (width < $bp-mobile) {
+			font-size: 0.8125rem;
+		}
 	}
 }
 
@@ -43,7 +52,7 @@
 .collapseDescription ul {
 	display: flex;
 	flex-direction: column;
-	line-height: 2rem;
+	line-height: 1.75rem;
 }
 
 .collapseDescription p {

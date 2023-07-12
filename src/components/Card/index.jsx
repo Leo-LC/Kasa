@@ -6,9 +6,8 @@ function Card({ image, title, logementId }) {
 		<Link to={`/logements/${logementId}`}>
 			<div className={styles.card}>
 				<img className={styles.image} src={image} alt="card" />
-				<div className={styles.overlay}>
-					<h3 className={styles.title}>{title}</h3>
-				</div>
+				<div className={styles.overlay}></div>
+				<h3 className={styles.title}>{title}</h3>
 			</div>
 		</Link>
 	);

@@ -6,8 +6,13 @@
 	align-items: center;
 	width: min(100%, 1240px);
 	margin-inline: auto;
-	padding: 3rem 1rem 0;
+	padding-inline: 1rem;
+	margin-block-start: 3rem;
 	font-weight: 500;
+
+	@media screen and (width < $bp-mobile) {
+		margin-block-start: 1rem;
+	}
 }
 
 .header a {
