@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+.aboutWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media screen and (width < 480px) {
+  .aboutWrapper {
+    gap: 1.25rem;
+  }
+}/*# sourceMappingURL=about.module.css.map */

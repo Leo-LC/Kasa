@@ -1,0 +1,11 @@
+@use "../../assets/styles/variables.scss" as *;
+
+.aboutWrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+
+	@media screen and (width < $bp-mobile) {
+		gap: 1.25rem;
+	}
+}

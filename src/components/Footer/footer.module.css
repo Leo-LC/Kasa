@@ -7,6 +7,15 @@ footer {
   gap: 2rem;
   padding: 2rem 0;
   margin-inline: -20rem;
+  text-align: center;
+}
+@media screen and (width < 480px) {
+  footer {
+    gap: 0.5rem;
+  }
+  footer > * {
+    max-width: 9rem;
+  }
 }
 
 .text {

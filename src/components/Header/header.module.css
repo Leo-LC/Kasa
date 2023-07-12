@@ -6,6 +6,7 @@
   width: min(100%, 1240px);
   margin-inline: auto;
   padding: 3rem 1rem 0;
+  font-weight: 500;
 }
 
 .header a {
@@ -18,4 +19,13 @@
 .header ul {
   display: flex;
   gap: 3.5rem;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+@media screen and (width < 480px) {
+  .header ul {
+    font-size: 0.75rem;
+    gap: 1rem;
+    text-transform: uppercase;
+  }
 }/*# sourceMappingURL=header.module.css.map */

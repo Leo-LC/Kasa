@@ -8,6 +8,14 @@ footer {
 	gap: 2rem;
 	padding: 2rem 0;
 	margin-inline: -20rem;
+	text-align: center;
+
+	@media screen and (width < $bp-mobile) {
+		gap: 0.5rem;
+		& > * {
+			max-width: 9rem;
+		}
+	}
 }
 
 .text {

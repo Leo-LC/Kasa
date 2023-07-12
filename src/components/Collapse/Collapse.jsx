@@ -30,3 +30,29 @@ export default function Collapse({ title, description }) {
 		</>
 	);
 }
+
+/* Test avec la fonctionnalité details / summary HTML */
+/* Need to review classes attribution */
+/* return (
+	<>
+		<div className={styles.collapseWrapper}>
+			<details>
+				<summary className={styles.collapseTitle}>
+					<h3>{title}</h3>
+					<button
+						className={styles.collapseButton}
+						onClick={() => setIsOpen(!isOpen)}
+					>
+						{isOpen ? (
+							<img src={chevronUp} alt="chevron-up" />
+						) : (
+							<img src={chevronDown} alt="chevron-down" />
+						)}
+					</button>
+				</summary>
+
+				<div className={styles.collapseDescription.open}>{description}</div>
+			</details>
+		</div>
+	</>
+); */

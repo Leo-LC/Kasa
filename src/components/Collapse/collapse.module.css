@@ -9,6 +9,11 @@
   padding-inline: 1rem;
   border-radius: 0.6125rem;
 }
+@media screen and (width < 480px) {
+  .collapseTitle {
+    font-size: 0.8125rem;
+  }
+}
 
 .collapseButton {
   border: none;
@@ -24,11 +29,17 @@
   color: hsl(0, 100%, 69%);
   font-size: 1.125rem;
   font-weight: 400;
-  padding: 5rem 1.75rem 1.25rem 1.25rem;
+  padding: 4rem 1.75rem 1.25rem 1.25rem;
   margin: 0;
   margin-top: -3rem;
   position: relative;
   z-index: -10;
+}
+@media screen and (width < 480px) {
+  .collapseDescription ul,
+  .collapseDescription p {
+    font-size: 0.8125rem;
+  }
 }
 
 .collapseDescription ul {
