@@ -1,5 +1,5 @@
-import Collapse from "../Collapse/Collapse";
-import Rating from "../Rating/rating";
+import Collapse from "../Collapse";
+import Rating from "../Rating";
 import styles from "./detailsgrid.module.scss";
 
 export default function DetailsGrid({

@@ -10,6 +10,10 @@
 	padding: 0.5rem 1rem;
 	border-radius: 0.6125rem;
 
+	@media screen and (width < $bp-tablet) {
+		padding: 0.5rem 0.75rem;
+	}
+
 	@media screen and (width < $bp-mobile) {
 		padding: 0 0.5rem;
 	}
@@ -18,6 +22,10 @@
 		font-size: 1.125rem;
 		font-weight: 500;
 		margin: 0;
+
+		@media screen and (width < $bp-tablet) {
+			font-size: 1rem;
+		}
 
 		@media screen and (width < $bp-mobile) {
 			font-size: 0.8125rem;
@@ -44,6 +52,10 @@
 	margin-top: -3rem;
 	position: relative;
 	z-index: -10;
+
+	@media screen and (width < $bp-tablet) {
+		font-size: 1rem;
+	}
 
 	@media screen and (width < $bp-mobile) {
 		font-size: 0.8125rem;
@@ -72,4 +84,8 @@
 
 .wrapper.open {
 	grid-template-rows: 1fr;
+}
+
+.chevron {
+	cursor: pointer;
 }

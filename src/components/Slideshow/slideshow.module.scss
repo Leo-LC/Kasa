@@ -6,6 +6,10 @@
 	height: 26rem;
 	border-radius: 1.5rem;
 
+	@media screen and (width < $bp-tablet) {
+		height: 20rem;
+	}
+
 	@media screen and (width < $bp-mobile) {
 		height: 16rem;
 	}
@@ -27,10 +31,15 @@
 }
 
 .arrow {
+	cursor: pointer;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
 	margin-inline: 1rem;
+
+	@media screen and (width < $bp-tablet) {
+		height: 3rem;
+	}
 
 	@media screen and (width < $bp-mobile) {
 		height: 1.5rem;

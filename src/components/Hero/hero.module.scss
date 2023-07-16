@@ -6,6 +6,10 @@
 	border-radius: 1.5rem;
 	overflow: hidden;
 
+	@media screen and (width < $bp-tablet) {
+		height: 10rem;
+		border-radius: 1rem;
+	}
 	@media screen and (width < $bp-mobile) {
 		height: 7rem;
 		border-radius: 0.63rem;
@@ -39,10 +43,13 @@
 }
 
 .text {
-	margin-inline: none;
+	margin-block: 0;
 	font-size: 3rem;
 	font-weight: 500;
 
+	@media screen and (width < $bp-tablet) {
+		font-size: 2rem;
+	}
 	@media screen and (width < $bp-mobile) {
 		font-size: 1.5rem;
 	}

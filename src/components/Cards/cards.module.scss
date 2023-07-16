@@ -9,6 +9,12 @@
 	overflow: hidden;
 	padding: 3.5rem 3rem;
 
+	@media screen and (width < $bp-tablet) {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2rem;
+		padding: 2.5rem 2rem;
+	}
+
 	@media screen and (width < $bp-mobile) {
 		grid-template-columns: 1fr;
 		gap: 1.25rem;

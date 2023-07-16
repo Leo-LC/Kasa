@@ -1,6 +1,6 @@
 import Hero from "../../components/Hero";
 import heroImage from "../../assets/images/hero-image-2.png";
-import Collapse from "../../components/Collapse/Collapse";
+import Collapse from "../../components/Collapse";
 import about from "../../data/about.json";
 import styles from "./about.module.scss";
 

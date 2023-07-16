@@ -1,6 +1,6 @@
 import { useParams, Navigate } from "react-router-dom";
 import logements from "../../data/logements.json";
-import Slideshow from "../../components/Slideshow/slideshow";
+import Slideshow from "../../components/Slideshow";
 import DetailsGrid from "../../components/DetailsGrid";
 
 function Logements() {

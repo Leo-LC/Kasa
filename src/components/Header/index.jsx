@@ -1,15 +1,17 @@
 import { Link } from "react-router-dom";
-import logoDesktop from "../../assets/images/logo-desktop.svg";
-import logoMobile from "../../assets/images/logo-mobile.svg";
+import logoDesktop from "../../assets/logos/logo-desktop.svg";
+import logoMobile from "../../assets/logos/logo-mobile.svg";
 import styles from "./header.module.scss";
 
 function Header() {
 	return (
 		<header className={styles.header}>
-			<picture>
-				<source media="(max-width: 768px)" srcSet={logoMobile} />
-				<img src={logoDesktop} alt="logo" />
-			</picture>
+			<Link to={"/"}>
+				<picture>
+					<source media="(max-width: 768px)" srcSet={logoMobile} />
+					<img src={logoDesktop} alt="logo" />
+				</picture>
+			</Link>
 			<nav>
 				<ul>
 					<li>

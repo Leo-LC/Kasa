@@ -10,6 +10,10 @@ footer {
 	margin-inline: -20rem;
 	text-align: center;
 
+	@media screen and (width < $bp-tablet) {
+		gap: 1.5rem;
+	}
+
 	@media screen and (width < $bp-mobile) {
 		gap: 0.5rem;
 		& > * {

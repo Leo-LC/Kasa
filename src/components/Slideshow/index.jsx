@@ -1,6 +1,6 @@
 import styles from "./slideshow.module.scss";
-import arrowLeft from "../../assets/images/arrow-left.svg";
-import arrowRight from "../../assets/images/arrow-right.svg";
+import arrowLeft from "../../assets/icons/arrow-left.svg";
+import arrowRight from "../../assets/icons/arrow-right.svg";
 import { useState } from "react";
 
 export default function Slideshow({ logement }) {
