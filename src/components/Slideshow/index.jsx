@@ -6,11 +6,13 @@ import { useState } from "react";
 export default function Slideshow({ logement }) {
 	const [currentSlide, setCurrentSlide] = useState(0);
 
+	const currentImage = logement.pictures[currentSlide];
+
 	const handleClick = (e) => {
 		if (e.target.classList.contains(styles.arrowLeft)) {
 			currentSlide === 0
 				? setCurrentSlide(logement.pictures.length - 1)
-				: setCurrentSlide(currentSlide - 1);
+				: setCurrentSlide(currentSlide - 1) && console.log(currentImage);
 		} else if (e.target.classList.contains(styles.arrowRight)) {
 			currentSlide === logement.pictures.length - 1
 				? setCurrentSlide(0)
@@ -41,27 +43,17 @@ export default function Slideshow({ logement }) {
 				</>
 			)}
 
+			{/* map des images */}
+
 			<div className={styles.slideshow}>
 				<div className={styles.slideshowImageWrapper}>
 					<img
-						className={styles.slideshowImage}
+						className={styles.slideshowImage + " " + styles.active}
 						src={logement.pictures[currentSlide]}
 						alt="logement"
 					/>
 				</div>
 			</div>
-
-			{/* 		<div className={styles.slideshow}>
-				{logement.pictures.map((picture) => (
-					<div key={picture} className={styles.slideshowImageWrapper}>
-						<img
-							className={styles.slideshowImage}
-							src={picture}
-							alt="logement"
-						/>
-					</div>
-				))}
-			</div> */}
 		</div>
 	);
 }

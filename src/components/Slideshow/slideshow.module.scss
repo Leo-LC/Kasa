@@ -38,7 +38,7 @@
 	margin-inline: 1rem;
 
 	@media screen and (width < $bp-tablet) {
-		height: 3rem;
+		height: 3srem;
 	}
 
 	@media screen and (width < $bp-mobile) {
@@ -65,4 +65,18 @@
 	@media screen and (width < $bp-mobile) {
 		display: none;
 	}
+}
+
+// animate the slideshow
+
+.slideshowImage {
+	transition: opacity 0.5s ease-in-out;
+}
+
+.slideshowImage:not(.active) {
+	opacity: 0;
+}
+
+.slideshowImage.active {
+	opacity: 1;
 }
